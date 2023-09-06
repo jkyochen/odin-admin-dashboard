@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template: 1fr 5fr / 1fr 3fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main-content"
+        "sidebar main-content";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #0284c7;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main-content {
+    background-color: lightgray;
+    padding: 30px;
+    grid-area: main-content;
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+    grid-template-areas:
+        "projects announcements"
+        "projects trending";
+    gap: 20px;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.projects-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.project-item {
+    background-color: white;
+    border-left: solid goldenrod;
+}
+
+.announcements {
+    background-color: white;
+    grid-area: announcements;
+}
+
+.trending {
+    background-color: white;
+    grid-area: trending;
+}
