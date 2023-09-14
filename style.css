@@ -183,3 +183,8 @@ button {
     padding-top: 20px;
     padding-bottom: 12px;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
