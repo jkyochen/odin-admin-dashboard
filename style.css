@@ -5,7 +5,6 @@
 }
 
 .container {
-    height: 100vh;
     display: grid;
     grid-template: 1fr 6fr / 1fr 5fr;
     grid-template-areas:
@@ -97,7 +96,6 @@ button {
 
 .projects {
     grid-area: projects;
-    overflow: auto;
 }
 
 .projects-content {
