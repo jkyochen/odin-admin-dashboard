@@ -45,11 +45,51 @@
 }
 
 .icon {
-    width: 2vw;
+    width: 1.7vw;
 }
 
 .header {
     grid-area: header;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 50px;
+}
+
+.header1-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.header2-info {
+    display: flex;
+    gap: 20px;
+}
+
+.header2-button {
+    display: flex;
+    gap: 25px;
+}
+
+button {
+    width: 120px;
+    color: white;
+    background-color: #0284c7;
+    border-radius: 30px;
+}
+
+.person-info {
+    display: flex;
+    flex-direction: column;
 }
 
 .main-content {
