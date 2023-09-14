@@ -44,10 +44,6 @@
     font-size: 1rem;
 }
 
-.icon {
-    width: 1.7vw;
-}
-
 .header {
     grid-area: header;
 }
@@ -87,17 +83,12 @@ button {
     border-radius: 30px;
 }
 
-.person-info {
-    display: flex;
-    flex-direction: column;
-}
-
 .main-content {
     background-color: lightgray;
-    padding: 30px;
+    padding: 20px;
     grid-area: main-content;
     display: grid;
-    grid-template: 1fr 1fr / 2fr 1fr;
+    grid-template: 1fr 1fr / 3fr 1fr;
     grid-template-areas:
         "projects announcements"
         "projects trending";
@@ -109,16 +100,10 @@ button {
     overflow: auto;
 }
 
-.main-title {
-    font-weight: bold;
-    font-size: larger;
-}
-
 .projects-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
-    padding-top: 12px;
 }
 
 .project-item {
@@ -145,11 +130,56 @@ button {
 }
 
 .announcements {
-    background-color: white;
     grid-area: announcements;
 }
 
-.trending {
+.announcements-list {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.announcement {
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.announcement:last-child {
+    border-bottom: 0px;
+}
+
+.trending {
     grid-area: trending;
+}
+
+.trending-list {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.trend {
+    display: flex;
+    gap: 10px;
+}
+
+/* common style */
+.icon {
+    width: 1.7vw;
+}
+
+.person-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: bold;
+    font-size: larger;
+    padding-top: 20px;
+    padding-bottom: 12px;
 }
